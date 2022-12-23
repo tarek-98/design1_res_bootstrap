@@ -1,0 +1,235 @@
+:root
+{
+    --dark-color:#19283F;
+    --seconed-color:#33D1CC;
+    --y-color:#FFC400;
+    --r--color:#FF3150;
+    --section-color:#EFF7FA;
+    --main-transition: 0.3s;
+}
+a
+{
+    text-decoration: none;
+}
+body
+{
+    font-family: "roboto" , sans-serif;
+}
+/* start navbar */
+.navbar
+{
+    background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link
+{
+    color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover
+{
+    color: var(--seconed-color);
+}
+.collapse .search
+{
+    border-left: 1px solid var(--seconed-color);
+}
+.collapse .search svg
+{
+    color: var(--seconed-color);
+}
+.navbar .navbar-toggler
+{
+    color: white;
+    border-color: white;
+}
+.navbar .navbar-toggler:focus
+{
+    box-shadow: none;
+}
+/* end navbar */
+/* strat landing */
+.landing
+{
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+}
+.main-btn,
+.main-btn:hover
+{
+    background-color: var(--r--color);
+    color: var(--y-color);
+    border: none;
+}
+/* end landing */
+/* start features */
+.main-title::after
+{
+    content: '';
+    position: absolute;
+    background-color: var(--seconed-color);
+    width: 120px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.features .icon-holder
+{
+    height: 150px;
+}
+.features .icon-holder svg
+{
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.features .icon-holder .number
+{
+    font-size: 150px;
+    color: #EFF7FA;
+}
+.features .icon-holder .icon
+{
+    color: var(--seconed-color);
+    bottom: 0;
+}
+.features .feat h4
+{
+    color: var(--y-color);
+}
+/*end features*/
+/*our-work*/
+.our-work
+{
+    background-color:var(--section-color);
+}
+.our-work ul li
+{
+    margin-left: 10px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.our-work ul li:not(.active):hover
+{
+    color: var(--r--color);
+}
+.our-work ul .active
+{
+    background-color: var(--r--color);
+    color: var(--y-color);
+}
+.our-work .box
+{
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.our-work .box::before
+{
+    content: attr(data-work);
+    position: absolute;
+    background-color: var(--seconed-color);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    opacity: 90%;
+    transform: translateX(calc( -100% - 5px));
+    -webkit-transform: translateX(calc( -100% - 5px));
+    -moz-transform: translateX(calc( -100% - 5px));
+    -ms-transform: translateX(calc( -100% - 5px));
+    -o-transform: translateX(calc( -100% - 5px));
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.our-work .box:hover::before 
+{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+/*end our-work*/
+/*start about*/
+.about .desc
+{
+    max-width: 500px;
+}
+/*end about*/
+/*start team*/
+.team
+{
+    background-color: var(--section-color);
+}
+.team .maintitle h2
+{
+    color: var(--y-color);
+}
+.team .row .box h2
+{
+    background-color: var(--seconed-color);
+}
+/*end team*/
+/*start projecr*/
+.project
+{
+    background-color: var(--dark-color);
+}
+/*end project*/
+/*strat blog*/
+.blog .box
+{
+    border: 1px solid #eee;
+}
+/*end blog*/
+/* start subscribe */
+.subscribe
+{
+    background-color: var(--y-color);
+}
+.subscribe .row input
+{
+    border: none;
+    background-color: var(--y-color);
+    border-bottom: 1px solid white;
+    color: white;
+}
+.subscribe .row input:focus
+{
+    outline: none;
+}
+.subscribe .row input::placeholder
+{
+    color: white;
+}
+.subscribe .row a
+{
+    background-color: var(--dark-color);
+    color: var(--y-color);
+}
+/*end subscribe*/
+/*start contact*/
+.contact
+{
+    background-color: var(--dark-color);
+}
+.contact .row p span
+{
+    color: var(--seconed-color);
+}
